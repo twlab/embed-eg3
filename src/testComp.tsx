@@ -17,7 +17,9 @@ export default function GenomeViewerTest() {
       type: "bigwig",
     },
   ]);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [zoom, setZoom] = useState<undefined | number>(undefined);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [type, setType] = useState("bigwig");
   const [genomeName, setGenomeName] = useState("hg19");
 
@@ -98,7 +100,7 @@ export default function GenomeViewerTest() {
         />
 
         <GenomeViewer
-          viewRegion={"chr7:27181545-27245617"}
+          viewRegion="chr7:27181545-27245617"
           tracks={[
             {
               url: "https://egg.wustl.edu/d/hg19/GSM832458.gz",
@@ -106,10 +108,10 @@ export default function GenomeViewerTest() {
               type: "longrange",
             },
           ]}
-          genomeName={"hg19"}
+          genomeName="hg19"
         />
         <GenomeViewer
-          viewRegion={"chr7:27181545-27245617"}
+          viewRegion="chr7:27181545-27245617"
           tracks={[
             {
               url: "https://vizhub.wustl.edu/hubSample/hg19/bam1.bam",
@@ -117,7 +119,7 @@ export default function GenomeViewerTest() {
               type: "bam",
             },
           ]}
-          genomeName={"hg19"}
+          genomeName="hg19"
         />
         <GenomeViewer
           viewRegion="chr7:27181545-27245617"
