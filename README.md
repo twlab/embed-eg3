@@ -45,7 +45,7 @@ import { GenomeViewer } from "wuepgg";
 
 See below for the full list of supported parameters.
 
-### Render entire browser with your datahub
+### Render the entire browser as a react component
 
 ```jsx
 import { GenomeHub } from "wuepgg";
@@ -55,7 +55,8 @@ import { GenomeHub } from "wuepgg";
 <GenomeHub />
 ```
 
-Will render the `hg19` genome with default tracks by default. See below for supported parameters.
+Render the browser's landing page where user can choose a genome
+to view
 
 ## API Reference
 
