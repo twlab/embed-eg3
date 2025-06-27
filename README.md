@@ -61,7 +61,7 @@ Will render the `hg19` genome with default tracks by default. See below for supp
 
 ### GenomeViewer
 
-A React component for visualizing genome tracks and regions.
+A React component for visualizing genomes
 
 **Props:**
 
@@ -105,8 +105,21 @@ A React component for visualizing genome tracks and regions.
   For more details on track formatting, see the [Epigenome Gateway Datahub documentation](https://epigenomegateway.readthedocs.io/en/latest/datahub.html).
 
 - **viewRegion** (`string`, optional)  
-  Genomic region to display, as a string (e.g., `"chr1:100000-200000"`).  
-  Default: Uses the genome’s default region if not provided.
+  Genomic region to display, as a string.
+
+  **Template:**
+
+  ```
+  "chr<chromosome>:<start>-<end>"
+  ```
+
+  **Example:**
+
+  ```
+  "chr7:27053397-27373765"
+  ```
+
+  _Default:_ Uses the genomeConfig’s default region if not provided.
 
 - **windowWidth** (`number`, optional)  
   Width of the genome viewer in pixels.  
