@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { GenomeViewer } from "wuepgg";
+import "wuepgg/style.css";
 const buttonStyle = {
   margin: "8px",
   padding: "8px 16px",

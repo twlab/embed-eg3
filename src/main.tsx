@@ -4,7 +4,7 @@ import "./index.css";
 import Apptest from "./App.tsx";
 
 createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <Apptest />
-  </StrictMode>
+  // <StrictMode>
+  <Apptest />
+  //  </StrictMode>
 );

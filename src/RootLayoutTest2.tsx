@@ -10,7 +10,7 @@ interface TracksProps {
   metadata?: { [key: string]: any };
 }
 
-export default function RootLayoutTest() {
+export default function RootLayoutTest2() {
   // Input values (what user is typing)
   const [viewRegionInput, setViewRegionInput] = useState<string>(
     "chr7:27053397-27373765"
@@ -74,8 +74,8 @@ export default function RootLayoutTest() {
     },
   ];
 
-  const [selectedTrackSet, setSelectedTrackSet] = useState<string>("trackSet1");
-  const [tracks, setTracks] = useState<TracksProps[]>(trackSet1);
+  const [selectedTrackSet, setSelectedTrackSet] = useState<string>("trackSet2");
+  const [tracks, setTracks] = useState<TracksProps[]>(trackSet2);
 
   // Handle track set change
   const handleTrackSetChange = (value: string) => {
@@ -408,7 +408,7 @@ export default function RootLayoutTest() {
       {/* RootLayout Display */}
       <div style={{ flex: 1, position: "relative", overflow: "hidden" }}>
         <GenomeHub
-          storeConfig={{ storeId: "genome-1" }}
+          storeConfig={{ storeId: "genome-2" }}
           viewRegion={viewRegionInput}
           genomeName={genomeName}
           tracks={tracks}

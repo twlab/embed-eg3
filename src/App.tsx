@@ -1,9 +1,9 @@
-import { GenomeHub } from "wuepgg";
 import GenomeViewerTest from "./testComp";
 import RootLayoutTest from "./RootLayoutTest";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import "wuepgg/style.css";
+
 import "react-tabs/style/react-tabs.css";
+import RootLayoutTest2 from "./RootLayoutTest2";
 
 function App() {
   return (
@@ -13,14 +13,18 @@ function App() {
       </h1>
       <Tabs>
         <TabList>
-          <Tab>Track Components</Tab>
           <Tab>Entire Browser</Tab>
+          <Tab>Entire Browser2</Tab>
+          <Tab>Track Components</Tab>
         </TabList>
         <TabPanel>
-          <GenomeViewerTest />
+          <RootLayoutTest />
         </TabPanel>
         <TabPanel>
-          <RootLayoutTest />
+          <RootLayoutTest2 />
+        </TabPanel>
+        <TabPanel>
+          <GenomeViewerTest />
         </TabPanel>
       </Tabs>
     </div>
