@@ -28,15 +28,15 @@ export default function RootLayoutTest() {
   // Define track sets
   const trackSet1: TracksProps[] = [
     {
-      url: "https://hicfiles.s3.amazonaws.com/hiseq/gm12878/in-situ/combined.hic",
-      name: "hictest",
-      type: "hic",
+      type: "ruler",
+      name: "Ruler",
     },
     {
-      url: "https://vizhub.wustl.edu/hubSample/hg19/bam1.bam",
-      name: "bamtest",
-      type: "bam",
+      url: "https://vizhub.wustl.edu/hubSample/hg19/GSM429321.bigWig",
+      name: "testbig",
+      type: "bigwig",
     },
+
     {
       name: "gencodeV47",
       type: "geneannotation",
@@ -44,6 +44,15 @@ export default function RootLayoutTest() {
   ];
 
   const trackSet2: TracksProps[] = [
+    {
+      type: "ruler",
+      name: "Ruler",
+    },
+    {
+      type: "bigbed",
+      name: "test bigbed",
+      url: "https://vizhub.wustl.edu/hubSample/hg19/bigBed1",
+    },
     {
       type: "bed",
       name: "mm10 bed",

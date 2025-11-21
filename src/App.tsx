@@ -11,13 +11,13 @@ function App() {
       <h1 style={{ fontSize: "36px", fontWeight: "bold" }}>
         Browser embedding example
       </h1>
-      <Tabs>
+      <Tabs forceRenderTabPanel={true}>
         <TabList>
           <Tab>Entire Browser</Tab>
           <Tab>Entire Browser2</Tab>
           <Tab>Track Components</Tab>
         </TabList>
-        <TabPanel>
+        <TabPanel>                                                                       
           <RootLayoutTest />
         </TabPanel>
         <TabPanel>

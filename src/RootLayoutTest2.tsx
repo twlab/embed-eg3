@@ -73,7 +73,16 @@ export default function RootLayoutTest2() {
       },
     },
   ];
-
+  const trackSet3: TracksProps[] = [
+    {
+      type: "ruler",
+      name: "Ruler",
+    },
+    {
+      type: "geneAnnotation",
+      name: "refGene",
+    },
+  ];
   const [selectedTrackSet, setSelectedTrackSet] = useState<string>("trackSet2");
   const [tracks, setTracks] = useState<TracksProps[]>(trackSet2);
 
@@ -406,16 +415,38 @@ export default function RootLayoutTest2() {
       </div>
 
       {/* RootLayout Display */}
-      <div style={{ flex: 1, position: "relative", overflow: "hidden" }}>
-        <GenomeHub
-          storeConfig={{ storeId: "genome-2" }}
-          viewRegion={viewRegionInput}
-          genomeName={genomeName}
-          tracks={tracks}
-          showGenomeNavigator={showGenomeNavigator}
-          showNavBar={showNavBar}
-          showToolBar={showToolBar}
-        />
+      <div
+        style={{
+          flex: 1,
+          position: "relative",
+          overflow: "hidden",
+          display: "flex",
+          gap: "8px",
+        }}
+      >
+        <div style={{ flex: 1, position: "relative", overflow: "hidden" }}>
+          <GenomeHub
+            storeConfig={{ storeId: "genome-2" }}
+            viewRegion={viewRegionInput}
+            genomeName={genomeName}
+            tracks={tracks}
+            showGenomeNavigator={showGenomeNavigator}
+            showNavBar={showNavBar}
+            showToolBar={showToolBar}
+          />
+        </div>
+        <div style={{ width: "2px", backgroundColor: "#ddd", flexShrink: 0 }} />
+        <div style={{ flex: 1, position: "relative", overflow: "hidden" }}>
+          <GenomeHub
+            storeConfig={{ storeId: "genome-3" }}
+            viewRegion={viewRegionInput}
+            genomeName={genomeName}
+            tracks={trackSet3}
+            showGenomeNavigator={showGenomeNavigator}
+            showNavBar={showNavBar}
+            showToolBar={showToolBar}
+          />
+        </div>
       </div>
     </div>
   );
