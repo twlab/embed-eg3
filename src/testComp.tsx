@@ -100,17 +100,7 @@ export default function GenomeViewerTest() {
           genomeName={genomeName}
         />
 
-        <GenomeViewer
-          viewRegion="chr7:27181545-27245617"
-          tracks={[
-            {
-              url: "https://egg.wustl.edu/d/hg19/GSM832458.gz",
-              name: "lonragetest",
-              type: "longrange",
-            },
-          ]}
-          genomeName="hg19"
-        />
+
         <GenomeViewer
           viewRegion="chr7:27181545-27245617"
           tracks={[

@@ -437,6 +437,15 @@ export default function RootLayoutTest2() {
         </div>
         <div style={{ width: "2px", backgroundColor: "#ddd", flexShrink: 0 }} />
         <div style={{ flex: 1, position: "relative", overflow: "hidden" }}>
+          {/* GenomeHub Props:
+              - storeConfig: { storeId: "any unique string" }
+              - viewRegion: string =, eg "chr7:27053397-27373765"
+              - genomeName: string =, eg "hg19"
+              - tracks: TracksProps[], eg [{ url: string, type: string, name?: string, options?: {} }]
+              - showGenomeNavigator: boolean, true/false
+              - showNavBar: boolean, true/false
+              - showToolBar: boolean, true/false
+          */}
           <GenomeHub
             storeConfig={{ storeId: "genome-3" }}
             viewRegion={viewRegionInput}

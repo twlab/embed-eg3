@@ -1,6 +1,10 @@
 import { useState } from "react";
+
+
 import { GenomeHub } from "wuepgg";
 import "wuepgg/style.css";
+
+
 interface TracksProps {
   url?: string;
   name?: string;
@@ -41,6 +45,41 @@ export default function RootLayoutTest() {
       name: "gencodeV47",
       type: "geneannotation",
     },
+
+        {
+      name: "gencodeV47",
+      type: "geneannotation",
+    },    {
+      name: "gencodeV47",
+      type: "geneannotation",
+    },    {
+      name: "gencodeV47",
+      type: "geneannotation",
+    },    {
+      name: "gencodeV47",
+      type: "geneannotation",
+    },    {
+      name: "gencodeV47",
+      type: "geneannotation",
+    },    {
+      name: "gencodeV47",
+      type: "geneannotation",
+    },    {
+      name: "gencodeV47",
+      type: "geneannotation",
+    },    {
+      name: "gencodeV47",
+      type: "geneannotation",
+    },    {
+      name: "gencodeV47",
+      type: "geneannotation",
+    },    {
+      name: "gencodeV47",
+      type: "geneannotation",
+    },    {
+      name: "gencodeV47",
+      type: "geneannotation",
+    },
   ];
 
   const trackSet2: TracksProps[] = [
@@ -78,7 +117,7 @@ export default function RootLayoutTest() {
           CHG: { color: "#ff944d", background: "#ffe0cc" },
           CHH: { color: "#ff00ff", background: "#ffe5ff" },
         },
-        depthColor: "#01E9FE",
+
       },
     },
   ];
@@ -415,7 +454,7 @@ export default function RootLayoutTest() {
       </div>
 
       {/* RootLayout Display */}
-      <div style={{ flex: 1, position: "relative", overflow: "hidden" }}>
+        <div style={{ flex: 1, position: "relative", overflow: "hidden" }}>
         <GenomeHub
           storeConfig={{ storeId: "genome-1" }}
           viewRegion={viewRegionInput}
